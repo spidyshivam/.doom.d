@@ -110,6 +110,7 @@
 
 ;;Pyright Config
 
+(require 'vc)
 (defun pyrightconfig-write (virtualenv)
   (interactive "DEnv: ")
 
@@ -141,7 +142,6 @@
     ;; the JSON payload, then flushes that content to final `pyrightconfig.json'
     ;; location
     (with-temp-file out-file (insert out-contents))))
-
 
 
 ;; LSP Config
